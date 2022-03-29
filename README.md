@@ -3,7 +3,6 @@ Automatically upload information to canvas gradebook
 
 Required Libraries: canvasapi, pandas
 
-
 ## Part 1 - Setup:
 Before you can begin using the Canvas API, you'll need to setup the permissions.
 
@@ -55,3 +54,9 @@ If you see any additional blank rows or rows that contain a fictious student (fo
 
 ### Step 6:
 Save this csv file as you will need this to create additional assignments.
+
+
+### Trouble Shooting:
+If you encounter an error along the lines of this: https://community.canvaslms.com/t5/Canvas-Developers-Group/User-not-authorized-to-perform-that-action/td-p/181632
+
+Make sure the assignment is published, as you are not able to upload these unless the assignment is publised.
