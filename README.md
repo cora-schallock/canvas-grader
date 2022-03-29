@@ -3,6 +3,11 @@ Automatically upload information to canvas gradebook
 
 Required Libraries: canvasapi, pandas
 
+To install canvasapi you can use: `pip install canvasapi` commnd in a terminal
+To install pandas you can use: `pip install pandas` commnd in a terminal
+
+**Important**: If your computer has multiple versions of python use the -m syntax to specify which python to install the library to. Say you want to install it to your python3, you can use: `python3 -m pip install canvasapi`. You can also use the full path to the python install instead of python3 if you have issues with this.
+
 ## Part 1 - Setup:
 Before you can begin using the Canvas API, you'll need to setup the permissions.
 
