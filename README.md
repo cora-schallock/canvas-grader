@@ -1,6 +1,8 @@
 # canvas-grader
 Automatically upload information to canvas gradebook
 
+Required Libraries: canvasapi, pandas
+
 
 ## Part 1 - Setup:
 Before you can begin using the Canvas API, you'll need to setup the permissions.

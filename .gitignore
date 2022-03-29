@@ -2,4 +2,4 @@
 keys/
 
 #ignore checkpoints:
-canvas-grader/.ipynb_checkpoints/
+.ipynb_checkpoints
