@@ -1,2 +1,5 @@
 #ignore the keys:
 keys/
+
+#ignore checkpoints:
+canvas-grader/.ipynb_checkpoints/
