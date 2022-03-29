@@ -87,7 +87,7 @@ For this section, I will be following the example notebook, so please refer to t
 **Important** You must update these variables in canvas-grader/constants.py before uploading grades: `CANVAS_URL`, `COURSE_CODE`, and `PATH_TO_CANVAS_KEY_FILE`
 * `CANVAS_URL` is your school's canvas URL (i.e. the site you go to for your canvas homepage. Hint: For most school's it will end in the domain of your school). If you need help find these, refer to the Canvas Documentation (note: I believe in the [documentation](https://community.canvaslms.com/t5/Canvas-Question-Forum/Where-do-I-get-the-api-url/m-p/141868/highlight/true#M57059) this is called: yourschool.instructure.com).
 * `COURSE_CODE` is your courses canvas code. This can be found by going to your course's canvas home page and looking at the number after courses. (For example if your courses url is "https://canvas.eee.uci.edu/courses/44461/" then the `COURSE_CODE` is 44461). **Important**: This must be passed to the Canvas object as an integer.
-* `PATH_TO_CANVAS_KEY_FILE` is the path to the txt file where you saved your canvas api key from [Part 1](`PATH_TO_CANVAS_KEY_FILE`)
+* `PATH_TO_CANVAS_KEY_FILE` is the path to the txt file where you saved your canvas api key from [Part 1](https://github.com/cora-schallock/canvas-grader)
 
 ### Step 2:
 Once you have gradebook ready to be uploaded as a csv file, save it somewhere on your computer where you can easily find it. The path to this file is the `csv_path` in the notebook.
