@@ -2,6 +2,7 @@ from canvasapi import Canvas
 
 from constants import CANVAS_URL, COURSE_CODE, PATH_TO_CANVAS_KEY_FILE, ID_KEY, STUDENT_KEY, ID_KEY, SIS_USER_ID_KEY, SIS_LOGIN_ID_KEY, SECTION_KEY
 from process_gradebook import standardize
+from file_helper import get_canvas_key
 
 def get_scores_for_students(data_frame,output_comment_folder,score_key="Score",assignment_name="assignment",upload_comments=True):
     id_to_score_dict = dict()
@@ -27,6 +28,7 @@ def get_scores_for_students(data_frame,output_comment_folder,score_key="Score",a
     return id_to_score_dict, id_to_comment_path_dict
 
 def upload_scores(id_to_score_dict, id_to_comment_path_dict,upload_comments=True, print_upload_id=True):
+    CANVAS_TOKEN = get_canvas_key()
     canvas = Canvas(CANVAS_URL, CANVAS_TOKEN)
     course = canvas.get_course(COURSE_CODE)
     
