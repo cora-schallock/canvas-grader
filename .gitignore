@@ -10,3 +10,4 @@ output-data/
 
 #ignore pycache:
 .__pycache__
+canvas_grader/__pycache__/
