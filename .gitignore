@@ -3,3 +3,10 @@ keys/
 
 #ignore checkpoints:
 .ipynb_checkpoints
+
+#ignore example data:
+input-data/
+output-data/
+
+#ignore pycache:
+.__pycache__

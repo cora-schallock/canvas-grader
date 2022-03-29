@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-from constants import PATH_TO_CANVAS_KEY_FILE
+from canvas_grader.constants import PATH_TO_CANVAS_KEY_FILE
 
 #functions for reading in CANVAS key:
 def get_canvas_key():
@@ -22,3 +22,9 @@ def write_to_file(file_path,to_write):
 def comment_file_path(output_comment_folder,sis_login,assignment_name):
     file_name = "{}_{}.txt".format(sis_login,assignment_name)
     return os.path.join(output_comment_folder,file_name)
+
+#folder helper
+def check_if_folder_exists_and_create(path):
+    '''check if folder exists and if not, create it'''
+    if not os.path.exists(path):
+        os.makedirs(path)
